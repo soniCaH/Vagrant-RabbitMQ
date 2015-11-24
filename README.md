@@ -39,7 +39,7 @@ This library aims at PHP developers solving the above described problem with Rab
 * start box: ```vagrant up```
 * ssh into box: ```vagrant ssh```
 * shutdown box: ```vagrant halt```
-* suspend box: ```vagrant suspend``
+* suspend box: ```vagrant suspend```
 * destroy box: ```vagrant destroy```
 
 ## Links:
