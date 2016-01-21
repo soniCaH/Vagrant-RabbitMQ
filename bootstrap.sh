@@ -3,12 +3,21 @@
 # Add debian package sources to apt-get sources.
 
 cat >> /etc/apt/sources.list <<EOT
+# Erlang repository.
+deb http://packages.erlang-solutions.com/ubuntu precise contrib
+EOT
+
+wget http://packages.erlang-solutions.com/ubuntu/erlang_solutions.asc
+apt-key add erlang_solutions.asc
+
+cat >> /etc/apt/sources.list <<EOT
 # RabbitMQ repository.
 deb http://www.rabbitmq.com/debian/ testing main
 
 # RabbitMQ CLI.
 deb http://apt.vandenbrand.org/debian testing main
 EOT
+
 
 # Add keys so we can retrieve packages from this URL.
 wget http://www.rabbitmq.com/rabbitmq-signing-key-public.asc
